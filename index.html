@@ -33,6 +33,28 @@
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyBx-VUiOnrFh3BodLAmoBtOeFs0KKAK8fQ",
+      authDomain: "kbg-tax-moblie.firebaseapp.com",
+      databaseURL: "https://kbg-tax-moblie.firebaseio.com",
+      projectId: "kbg-tax-moblie",
+      storageBucket: "kbg-tax-moblie.appspot.com",
+      messagingSenderId: "266174137829",
+      appId: "1:266174137829:web:8dbc7cda136e3d5b955b0c",
+      measurementId: "G-4LEL8WC3WD"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
