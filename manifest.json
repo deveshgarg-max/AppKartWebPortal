@@ -1,6 +1,6 @@
 {
-    "name": "appkart_admin_panel",
-    "short_name": "appkart_admin_panel",
+    "name": "testweb",
+    "short_name": "testweb",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
